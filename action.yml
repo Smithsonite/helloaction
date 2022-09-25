@@ -4,19 +4,19 @@ inputs:
   InputOne:  # id of input
     description: 'The First Input'
     required: true
-    default: 'GH Default One'
+    default: "GH Default One"
   InputTwo:  # id of input
     description: 'The Second Input'
     required: true
-    default: 'GH Default Two'
+    default: "GH Default Two"
   InputThree:  # id of input
     description: 'The Third Input'
     required: true
-    default: 'GH Default Three'
+    default: "GH Default Three"
   InputFour:  # id of input
     description: 'The Fourth Input'
     required: true
-    default: 'GH Default Four'
+    default: "GH Default Four"
 runs:
   using: "composite"
   steps:
