@@ -1,0 +1,26 @@
+name: 'Hello World'
+description: 'writes an output'
+inputs:
+  InputOne:  # id of input
+    description: 'The First Input'
+    required: true
+    default: 'GH Default One'
+  InputTwo:  # id of input
+    description: 'The Second Input'
+    required: true
+    default: 'GH Default Two'
+  InputThree:  # id of input
+    description: 'The Third Input'
+    required: true
+    default: 'GH Default Three'
+  InputFour:  # id of input
+    description: 'The Fourth Input'
+    required: true
+    default: 'GH Default Four'
+runs:
+  using: "composite"
+  steps:
+    - run: echo "${{ github.action_path }}" >> $GITHUB_PATH
+      shell: bash          
+    - run: test-action.ps1
+      shell: pwsh
