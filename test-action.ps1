@@ -1,11 +1,11 @@
 Param (
-    [Parameter()]
+    [Parameter(Position=0)]
     [string]$InputOne = "Default input One",
-    [Parameter()]
+    [Parameter(Position=1)]
     [string]$InputTwo = "Default input two",
-    [Parameter()]
+    [Parameter(Position=2)]
     [string]$InputThree = "Default input three",
-    [Parameter()]
+    [Parameter(Position=3)]
     [string]$InputFour = "Default input four"
 )
 Function test-action {
