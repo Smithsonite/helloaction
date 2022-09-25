@@ -16,8 +16,11 @@ Function test-action {
         The Second input is $InputTwo.
         The Third input is $InputThree.
         The Fourth input is $InputFour."
+        $outputtest = "This is an output test and contains the value $InputOne"
     }
-    end {}
+    end {
+        write-output "::set-output name=outputtest1::$outputtest"
+    }
 }
 
 test-action
